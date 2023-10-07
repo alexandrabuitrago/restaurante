@@ -22,31 +22,31 @@
                 <nav id="nav">
                     <ul>
                         <li>
-                            <a href="#inicio">
+                            <a href="#inicio" onclick="seleccionar()">
                                 <i class="fa-solid fa-house"></i>
                                 <span>Inicio</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#sabores">
+                            <a href="#sabores" onclick="seleccionar()">
                                 <i class="fa-solid fa-ice-cream"></i>
                                 <span>Sabores</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#platos">
+                            <a href="#platos" onclick="seleccionar()">
                                 <i class="fa-solid fa-utensils"></i>
                                 <span>Platos</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#blog">
+                            <a href="#blog" onclick="seleccionar()">
                                 <i class="fa-solid fa-pen"></i>
                                 <span>Blog</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#contacto">
+                            <a href="#contacto" onclick="seleccionar()">
                                 <i class="fa-solid fa-comments"></i>
                                 <span>Contacto</span>
                             </a>
@@ -65,7 +65,7 @@
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
-                <div class="nav-responsive" id="bar">
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultar()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
         </header>
@@ -272,5 +272,6 @@
     </section>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
