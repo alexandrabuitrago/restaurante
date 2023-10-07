@@ -6,61 +6,156 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Restaurante</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
+
+
 <body>
     <!-- seccion inicio -->
     <section id="inicio">
-        <div class="contenido-header">
-            <div class="logo">
-                <h1>AB</h1>
+        <!-- encabezado -->
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>AB</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sabores">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <span>Sabores</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#platos">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Platos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="tel:+222-3456-34">
+                        <i class="fa-solid fa-phone"></i>
+                        222-3456-34
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="nav-responsive" id="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+        </header>
+        <!-- carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{"wrapAround":true, "pageDots":false, "autoPlay":true}'>
+                <div class="gallery-cell">
+                    <img src="img/fondo-1.avif" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/fondo-2.png" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/fondo-3.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/fondo-4.jpg" alt="">
+                </div>
             </div>
-            <nav id="nav">
-                <ul>
-                    <li>
-                        <a href="#inicio">
-                            <i class="fa-solid fa-house"></i>
-                            <span>Inicio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#sabores">
-                            <i class="fa-solid fa-ice-cream"></i>
-                            <span>Sabores</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#platos">
-                            <i class="fa-solid fa-utensils"></i>
-                            <span>Platos</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#blog">
-                            <i class="fa-solid fa-pen"></i>
-                            <span>Blog</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contacto">
-                            <i class="fa-solid fa-comments"></i>
-                            <span>Contacto</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="tel:+222-3456-34">
-                    <i class="fa-solid fa-phone"></i>
-                    222-3456-34
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
+            <div class="info">
+                <h2>Comidas Deliciosas para cada gusto</h2>
+                <p>La comidas más deliciosas las encuntras aqui con nosotros. Para todo tipo de gusto que tengan.</p>
+                <button>Leer Más</button>
             </div>
         </div>
     </section>
+
+    <!-- seccion sabores -->
+    <section id="sabores">
+        <h2>Sabores</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabores-1.avif" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ensaladas</h3>
+                    <p>Las ensaladas más sabrosas y nutritivas las encontrarás aquí..</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabores-2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Postres</h3>
+                    <p>Los postres riquisimos los preparamos aquí..</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabores-3.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Hamburguesas</h3>
+                    <p>Las ensaladas más grandes y ricas estan aquí..</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabores-4.avif" alt="">
+                </div>
+                <div class="info">
+                    <h3>Helados</h3>
+                    <p>Buscas helados que no habias probrado antes ... </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabores-5.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Pastas</h3>
+                    <p>Las pastas de todas las nacionalidades</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabores-6.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Galletas</h3>
+                    <p>Galletas de todos los sabores y tamaños</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
