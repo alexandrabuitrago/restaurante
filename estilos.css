@@ -131,5 +131,119 @@ html{
     margin: auto;
 }
 #sabores .fila .item img{
-    max-width: 8px;
+    max-width: 80px;
+}
+#sabores .fila .item{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 5px;
+}
+#sabores .fila .item:hover{
+    background-color: #ff8f46;
+}
+#sabores .fila .item .info{
+    margin-left: 15px;
+    font-size: 14px;
+}
+#sabores button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    font-size: 20px;
+    border: none;
+    background-color: #ff8f46;
+    color: black;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/*platos*/
+#platos h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#platos .fila{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#platos .fila .item{
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+}
+#platos .fila .item img{
+    width: 100%;
+    display: block;
+}
+#platos .fila .item p{
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 10px;
+    background-color: #ff8f46;
+    color: black;
+    transition: .5s;
+}
+#platos .fila .item:hover p{
+    bottom: 0;
+}
+#platos button{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 20px;
+    border: none;
+    background-color: #ff8f46;
+    color: black;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/*blog*/
+#blog{
+    padding: 50px 0;
+}
+#blog h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.galeria-blog{
+    max-width: 800px;
+    margin: 50px auto;
+}
+.galeria-blog .gallery-cell .item{
+    display: flex;
+    align-items: center;
+    margin: 0 80px;
+}
+.galeria-blog .gallery-cell img{
+    display: block;
+    width: 100px;
+    border-radius: 58%;
+    border: 2px solid #ff8f46;
+    margin-right: 30px;
+
+}
+.galeria-blog .gallery-cell p{
+    color: #a8a8a8;
+    font-style: italic;
+}
+#blog button{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 20px;
+    border: none;
+    background-color: #ff8f46;
+    color: black;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
 }
